@@ -1,0 +1,62 @@
+/* Стили для контейнера инпута и кнопки */
+.picker-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+#datetime-picker {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  width: 250px;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+/* Стили для красивого отображения цифр таймера в ряд */
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2e2f42;
+}

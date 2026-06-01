@@ -1,0 +1,61 @@
+/* Стили для формы Snackbar */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  margin-top: 20px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.form input[type='number'] {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form input[type='number']:focus {
+  border-color: #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+fieldset legend {
+  padding: 0 8px;
+}
+
+.form fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.form button[type='submit'] {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.form button[type='submit']:hover {
+  background-color: #3b61e6;
+}
